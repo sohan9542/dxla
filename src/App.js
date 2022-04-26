@@ -13,6 +13,11 @@ import CreateLaunchpad from './pages/lounchpad/CreateLaunchpad';
 import CreateFairLaunch from './pages/lounchpad/CreateFairLaunch';
 import CreateTokenpage from './pages/lounchpad/CreateTokenpage';
 import LaunchpadList from './pages/lounchpad/LaunchpadList';
+import CreatePinkpad from './pages/pinkpad/createPinkpad';
+import PinkpadList from './pages/pinkpad/PinkpadList';
+import DxlaLockCreate from './pages/dxlalock/DxlaLockCreate';
+import LockToken from './pages/dxlalock/LockToken';
+import Liquidity from './pages/dxlalock/Liquidity';
 
 
 const App = () => {
@@ -43,6 +48,22 @@ const App = () => {
             </Route>
             <Route path="/launchpad-list">
               <LaunchpadList />
+            </Route>
+            <Route path="/create-pinkpad">
+              <CreatePinkpad />
+            </Route>
+            <Route path="/pinkpad-list">
+              <PinkpadList />
+            </Route>
+            <Route path="/create-lock">
+              <DxlaLockCreate />
+            </Route>
+            <Route path="/token">
+              <LockToken />
+            </Route>
+       
+            <Route path="/liquidity">
+              <Liquidity />
             </Route>
        
           </Switch>

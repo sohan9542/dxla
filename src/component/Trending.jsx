@@ -3,7 +3,7 @@ import { BiTrendingUp } from "react-icons/bi";
 import { Link } from "react-router-dom";
 const Trending = () => {
   return (
-    <div className=" py-2 px-2 flex items-center   shadow-md overflow-x-scroll lg:w-full w-screen">
+    <div className=" py-2 px-2 flex items-start flex-col lg:h-full   lg:w-32 w-screen">
       <div className=" flex items-center gap-1 px-2 text-sr">
         <BiTrendingUp className=" text-tr w-5 h-5" />
         Trending
@@ -26,7 +26,7 @@ const Trending = () => {
           ALCA
         </Link>
       </div>
-      <div className=" flex items-center gap-1  px-2text-sr text-lg">
+      <div className=" flex items-center gap-1  px-2 text-sr text-lg">
         #4
         <Link to="/launchpad/create" className=" text-tr text-sm">
           USB
@@ -69,13 +69,13 @@ const Trending = () => {
           HBTT{" "}
         </Link>
       </div>
-      <div className=" flex items-center gap-1  px-2text-sr text-lg">
+      <div className=" flex items-center gap-1  px-2 text-sr text-lg">
         #11
         <Link to="/launchpad/create" className=" text-tr text-sm">
           PNFT{" "}
         </Link>
       </div>
-      <div className=" flex items-center gap-1  text-sr text-lg">
+      <div className=" flex items-center gap-1 px-2 text-sr text-lg">
         #12
         <Link to="/launchpad/create" className=" text-tr text-sm">
           BMD{" "}
