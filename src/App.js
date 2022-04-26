@@ -18,6 +18,10 @@ import PinkpadList from './pages/pinkpad/PinkpadList';
 import DxlaLockCreate from './pages/dxlalock/DxlaLockCreate';
 import LockToken from './pages/dxlalock/LockToken';
 import Liquidity from './pages/dxlalock/Liquidity';
+import CreateAirdrop from './pages/airdrop/CreateAirdrop';
+import AirdropList from './pages/airdrop/AirdropList';
+import LeaderBoard from './pages/LeaderBoard';
+
 
 
 const App = () => {
@@ -64,6 +68,15 @@ const App = () => {
        
             <Route path="/liquidity">
               <Liquidity />
+            </Route>
+            <Route path="/create-airdrop">
+              <CreateAirdrop />
+            </Route>
+            <Route path="/airdrop-list">
+              <AirdropList />
+            </Route>
+            <Route path="/leaderboard">
+              <LeaderBoard />
             </Route>
        
           </Switch>

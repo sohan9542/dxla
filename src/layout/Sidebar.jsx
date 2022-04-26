@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiBarChart } from "react-icons/bi";
+import { GiQueenCrown } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 import { MdDeviceHub } from "react-icons/md";
 import { MdManageAccounts } from "react-icons/md";
@@ -8,22 +8,23 @@ import { VscProject } from "react-icons/vsc";
 
 import { SiStatuspal } from "react-icons/si";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { SiSemanticuireact } from "react-icons/si";
 import {
-  IoIosArrowRoundForward,
-  IoIosArrowDown,
+
   IoIosArrowUp,
 } from "react-icons/io";
 import { MdOutlineAdminPanelSettings, MdLocalPolice } from "react-icons/md";
-import { AiOutlineTransaction, AiFillLock, AiFillRocket } from "react-icons/ai";
+import { AiOutlineTransaction, AiFillLock, AiFillRocket,AiOutlineDropbox } from "react-icons/ai";
 import { IoFlaskOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import logo from "../images/logo.svg";
+
 const Sidebar = ({ setShowsidebar }) => {
   const [contractshow, setContractshow] = useState(false);
   const [transhow, setTranshow] = useState(false);
   const [loaunchpad, setLoaunchpad] = useState(false);
   const [pinkpad, setPinkpad] = useState(false);
   const [dxllock, setDxllock] = useState(false)
+  const [dxldrop, setDxldrop] = useState(false)
   return (
     <div className="fixed w-20 lg:w-52 top-14  shadow-lg z-30 bg-pr min-h-screen">
       <div className="w-full hidden lg:flex py-4 flex-col items-center gap-1">
@@ -187,6 +188,72 @@ const Sidebar = ({ setShowsidebar }) => {
             </div>
           </div>
         )}
+
+
+        {/* drop */}
+        <div className="w-full  flex items-center justify-center">
+          <div
+            onClick={() => setDxldrop(!dxldrop)}
+            className="py-2 cursor-pointer flex items-center justify-between px-2 text-white hover:text-tr w-full"
+          >
+            <div className="flex items-center gap-2">
+              <AiOutlineDropbox /> DXLA Drop
+            </div>
+            {!dxldrop ? (
+              <IoIosArrowUp />
+            ) : (
+              <RiArrowDownSLine className="h-5 w-5" />
+            )}
+          </div>
+        </div>
+        {dxldrop && (
+          <div className="w-full flex items-center flex-col text-sm">
+            <div className="w-full pl-1 flex items-center justify-center">
+              <NavLink
+                exact
+                activeClassName="hvr tc w-full"
+                className="py-2 flex items-center gap-2 pl-7 text-white hover:text-sr w-full"
+                to="/create-airdrop"
+              >
+                Create Airdrop
+              </NavLink>
+            </div>
+            <div className="w-full pl-1 flex items-center justify-center">
+              <NavLink
+                exact
+                activeClassName="hvr tc w-full"
+                className="py-2 flex items-center gap-2 pl-7 text-white hover:text-sr w-full"
+                to="/airdrop-list"
+              >
+                Airdrop list
+              </NavLink>
+            </div>
+     
+          </div>
+        )}
+
+        {/*  */}
+        <div className="w-full  flex items-center justify-center">
+          <NavLink
+            exact
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/leaderboard"
+          >
+            <GiQueenCrown /> Leaderboard
+          </NavLink>
+        </div>
+        {/*  */}
+        <div className="w-full  flex items-center justify-center">
+          <NavLink
+            exact
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/anti-bot"
+          >
+            <SiSemanticuireact /> DXLA Anti-Bot
+          </NavLink>
+        </div>
       </div>
       <div className="w-full flex lg:hidden py-4 flex-col items-center  gap-1">
         <div className="w-full  flex items-center justify-center">
