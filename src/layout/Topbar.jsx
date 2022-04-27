@@ -2,7 +2,7 @@ import { FiPlus } from "react-icons/fi";
 import { GoThreeBars } from "react-icons/go";
 import { IoMagnet } from "react-icons/io5";
 import { BiBarChart } from "react-icons/bi"
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 import {Link} from "react-router-dom"
 import IconButton from '@mui/material/IconButton';
 
