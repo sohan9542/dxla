@@ -14,9 +14,8 @@ import {  AiFillLock, AiFillRocket,AiOutlineDropbox,AiTwotoneAlert ,AiOutlineFil
 
 import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ setShowsidebar }) => {
-  const [contractshow, setContractshow] = useState(false);
-  const [transhow, setTranshow] = useState(false);
+const Sidebar = () => {
+
   const [loaunchpad, setLoaunchpad] = useState(false);
   const [pinkpad, setPinkpad] = useState(false);
   const [dxllock, setDxllock] = useState(false)
