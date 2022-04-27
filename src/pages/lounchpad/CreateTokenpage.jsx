@@ -4,9 +4,9 @@ import Trending from '../../component/Trending'
 
 const CreateTokenpage = () => {
   return (
-    <div className=' w-full lg:p-4'>
+    <div className=' w-full p-2 lg:p-4'>
     
-      <div className='  flex items-start'>
+      <div className='  flex items-start flex-col lg:flex-row'>
         <Trending/>
      <div className=' w-full'>
      <CreateToken/>

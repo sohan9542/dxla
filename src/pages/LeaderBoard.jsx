@@ -48,7 +48,7 @@ const LeaderBoard = () => {
   const loop = [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 5, 5, 5, 5];
   return (
     <div className=" w-full">
-      <div className=" flex items-start container">
+      <div className=" flex items-start container p-2 lg:p-0 flex-col lg:flex-row">
         <Trending />
         <div className=" w-full" style={{ background: "#172A4B" }}>
           <Box sx={{ maxWidth: { xs: 320, sm: 480, lg: 850 } }}>

@@ -23,7 +23,7 @@ const CreateLaunchpad = () => {
   ]
   return (
     <>
-  <div className=' flex items-start mt-20 '>
+  <div className=' flex items-start flex-col lg:flex-row mt-20 p-2 lg:p-0'>
   <Trending/>
      <div className='w-full pb-2'>
      <Steps steps={steps}/>

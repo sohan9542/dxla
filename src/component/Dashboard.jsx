@@ -40,7 +40,7 @@ const Dashboard = () => {
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leonatoque
             penatibu.
           </p>
-          <div className=" flex items-center justify-center gap-2 pt-3">
+          <div className=" flex items-center flex-wrap w-full mb-3 justify-start  gap-2 pt-3">
             <button className=" hvr text-white py-3 px-5 text-lg rounded-md flex items-center gap-1">
               Get Started
             </button>
@@ -59,7 +59,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-32 flex items-center justify-center gap-4 flex-wrap">
+      <div className=" mt-32 grid grid-cols-2 lg:flex items-center justify-center gap-4 flex-wrap">
         <a href="http://gogle.com" target="_blank" rel="noopener noreferrer">
           <img src={bihance} alt="" />
         </a>
@@ -74,8 +74,8 @@ const Dashboard = () => {
         </a>
       </div>
       <div className=" w-full flex flex-col items-center justify-center pt-32 pb-16 gap-3">
-        <h6 className=" text-tr">BLOCKCHAIN PLATFORM</h6>
-        <h1 className=" text-white text-5xl font-bold">Blockchain Solution</h1>
+        <h6 className=" text-tr text-center w-full">BLOCKCHAIN PLATFORM</h6>
+        <h1 className=" text-white text-5xl text-center w-full font-bold">Blockchain Solution</h1>
         <p className=" text-gray-500 text-lg text-center w-full lg:w-3/4">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
@@ -111,7 +111,7 @@ const Dashboard = () => {
           className=" absolute z-10 top-0 left-0 h-full w-full flex items-center gap-4 rounded-xl flex-col justify-center"
           style={{ background: "rgba(0,0,0,0.5)" }}
         >
-          <h1 className=" font-bold text-5xl text-white">
+          <h1 className=" font-bold text-2xl lg:text-5xl text-white">
             Fortune favours the brave
           </h1>
           <div className=" flex items-center justify-center">
@@ -211,10 +211,10 @@ const Dashboard = () => {
           >
             <source src={dxproject} type="video/mp4" />
           </video>
-          <h1 className=" text-8xl text-tr absolute top-0 -left-8 z-10 font-bold">
+          <h1 className=" text-5xl lg:text-8xl text-tr absolute top-0 lg:-left-8 z-10 font-bold">
             DXLA
           </h1>
-          <h1 className=" text-8xl text-tr absolute bottom-0 -left-8 z-10 font-bold">
+          <h1 className=" text-5xl lg:text-8xl text-tr absolute bottom-0 lg:-left-8 z-10 font-bold">
             PROJECT
           </h1>
           <div className=" absolute top-5 z-10 right-24">
@@ -286,7 +286,7 @@ const Dashboard = () => {
       </div>
       <div className=" w-full flex flex-col items-center justify-center pt-32 pb-16 gap-3">
         <h6 className=" text-tr">OUR VISION</h6>
-        <h1 className=" text-white text-5xl font-bold text-center">
+        <h1 className=" text-white text-4xl lg:text-5xl font-bold text-center ">
           Cryptocurrency in every wallet
         </h1>
         <p className=" text-gray-500 text-lg text-center w-full lg:w-3/4">
@@ -295,7 +295,7 @@ const Dashboard = () => {
           et magnis dis
         </p>
       </div>
-      <div className=" w-full flex items-center justify-center gap-5">
+      <div className=" w-full flex items-center flex-wrap justify-center gap-5">
         <div className="flex flex-col gap-3 items-center">
           <h6 className=" text-6xl text-tr">2014</h6>
           <p className=" text-lg text-white">Founded</p>

@@ -163,3 +163,10 @@ button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeMedium.Mu
 .css-9l3uo3{
   color: #fff!important;
 }
+.css-k008qs button{
+  color: #fff!important;
+}
+.css-1pz7awu-MuiButtonBase-root-MuiIconButton-root{
+  padding: 8px 15px!important;
+  font-size: 16px!important;
+}

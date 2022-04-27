@@ -53,7 +53,7 @@ const PinkpadList = () => {
   };
   return (
     <div className=" w-full">
-<div className=" w-full flex items-start ">
+<div className=" w-full flex items-start p-2 lg:p-0 flex-col lg:flex-row">
 <Trending />
     <>
     

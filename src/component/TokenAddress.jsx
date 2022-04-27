@@ -34,7 +34,7 @@ const TokenAddress = ({ handleNext }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} className=" w-2/5">
+        <Box sx={style} className=" lg:w-2/5 w-80">
          <CreateToken/>
         </Box>
       </Modal>

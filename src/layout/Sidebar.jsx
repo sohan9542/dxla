@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import { GiQueenCrown } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
-import { MdDeviceHub } from "react-icons/md";
-import { MdManageAccounts } from "react-icons/md";
-import { BiChat } from "react-icons/bi";
-import { VscProject } from "react-icons/vsc";
 
-import { SiStatuspal } from "react-icons/si";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { BsFillFileEarmarkRichtextFill,BsTelegram } from "react-icons/bs";
 import { SiSemanticuireact } from "react-icons/si";
 import {
 
   IoIosArrowUp,
 } from "react-icons/io";
-import { MdOutlineAdminPanelSettings, MdLocalPolice } from "react-icons/md";
-import { AiOutlineTransaction, AiFillLock, AiFillRocket,AiOutlineDropbox } from "react-icons/ai";
-import { IoFlaskOutline } from "react-icons/io5";
+import { MdLocalPolice } from "react-icons/md";
+import {  AiFillLock, AiFillRocket,AiOutlineDropbox,AiTwotoneAlert ,AiOutlineFileProtect,AiFillTwitterCircle} from "react-icons/ai";
+
 import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ setShowsidebar }) => {
@@ -26,8 +22,8 @@ const Sidebar = ({ setShowsidebar }) => {
   const [dxllock, setDxllock] = useState(false)
   const [dxldrop, setDxldrop] = useState(false)
   return (
-    <div className="fixed w-20 lg:w-52 top-14  shadow-lg z-30 bg-pr min-h-screen">
-      <div className="w-full hidden lg:flex py-4 flex-col items-center gap-1">
+    <div className="fixed w-52 top-20  shadow-lg z-50 bg-pr min-h-screen">
+      <div className="w-full  flex py-4 flex-col items-center gap-1">
         <div className="w-full  flex items-center justify-center">
           <NavLink
             exact
@@ -254,177 +250,62 @@ const Sidebar = ({ setShowsidebar }) => {
             <SiSemanticuireact /> DXLA Anti-Bot
           </NavLink>
         </div>
-      </div>
-      <div className="w-full flex lg:hidden py-4 flex-col items-center  gap-1">
+        {/*  */}
         <div className="w-full  flex items-center justify-center">
           <NavLink
             exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/"
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/pool"
           >
-            {" "}
-            <FaHome />
+            <AiTwotoneAlert /> Pools Alert
+          </NavLink>
+        </div>
+        {/*  */}
+        <div className="w-full  flex items-center justify-center">
+          <NavLink
+            exact
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/kyc"
+          >
+            <AiOutlineFileProtect /> KYC & Audit
+          </NavLink>
+        </div>
+        {/*  */}
+        <div className="w-full  flex items-center justify-center">
+          <NavLink
+            exact
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/docs"
+          >
+            <BsFillFileEarmarkRichtextFill /> Docs
+          </NavLink>
+        </div>
+        {/*  */}
+        <div className="w-full  flex items-center justify-center">
+          <NavLink
+            exact
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/telegram"
+          >
+            <BsTelegram /> Telegram
           </NavLink>
         </div>
         <div className="w-full  flex items-center justify-center">
           <NavLink
             exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/device"
+            activeClassName="hvr tc w-full bg-pr "
+            className="py-2 flex items-center gap-2 px-2 text-sr hover:text-tr w-full"
+            to="/telegram"
           >
-            {" "}
-            <MdDeviceHub />{" "}
-          </NavLink>
-        </div>
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/labs"
-          >
-            {" "}
-            <IoFlaskOutline />{" "}
-          </NavLink>
-        </div>
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/projects"
-          >
-            {" "}
-            <VscProject />{" "}
-          </NavLink>
-        </div>
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            onClick={() => setContractshow(!contractshow)}
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/clist"
-          >
-            <div className="flex items-center justify-center">
-              <MdManageAccounts />{" "}
-            </div>
-          </NavLink>
-        </div>
-        {contractshow && (
-          <div className="w-full flex items-center flex-col text-xs">
-            <div className="w-full flex items-center ">
-              <NavLink
-                exact
-                activeClassName="hvr tc w-full"
-                className="py-2 flex items-center gap-2 px-2 text-white hover:text-sr w-full"
-                to="/clist"
-              >
-                {" "}
-                C-list
-              </NavLink>
-            </div>
-            <div className="w-full flex items-center ">
-              <NavLink
-                exact
-                activeClassName="hvr tc w-full"
-                className="py-2 flex items-center gap-2 px-2 text-white hover:text-sr w-full"
-                to="/vlist"
-              >
-                {" "}
-                V-list
-              </NavLink>
-            </div>
-          </div>
-        )}
-        <div className="w-full flex items-center justify-center">
-          <NavLink
-            onClick={() => setTranshow(!transhow)}
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/payment-history"
-          >
-            <div className="flex items-center gap-2">
-              <AiOutlineTransaction />
-            </div>
-          </NavLink>
-        </div>
-        {transhow && (
-          <div className="w-full flex items-center flex-col text-xs">
-            <div className="w-full  flex items-center justify-center">
-              <NavLink
-                exact
-                activeClassName="hvr tc w-full"
-                className="py-2 flex items-center  text-white hover:text-sr w-full"
-                to="/payment-history"
-              >
-                {" "}
-                P-history
-              </NavLink>
-            </div>
-            <div className="w-full flex items-center justify-center">
-              <NavLink
-                exact
-                activeClassName="hvr tc w-full"
-                className="py-2 flex items-center   text-white hover:text-sr w-full"
-                to="/wallet"
-              >
-                {" "}
-                Wallet
-              </NavLink>
-            </div>
-            <div className="w-full flex items-center justify-center">
-              <NavLink
-                exact
-                activeClassName="hvr tc w-full"
-                className="py-2 flex items-center  px-1  text-white hover:text-sr w-full"
-                to="/invoices"
-              >
-                {" "}
-                Invoices
-              </NavLink>
-            </div>
-          </div>
-        )}
-
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-2 text-white hover:text-sr w-full"
-            to="/inquiery"
-          >
-            {" "}
-            <SiStatuspal />
-          </NavLink>
-        </div>
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 flex items-center justify-center px-1 text-white hover:text-sr w-full"
-            to={"/chatbox/" + 0}
-          >
-            {" "}
-            <BiChat />
-          </NavLink>
-        </div>
-        <div className="w-full  flex items-center justify-center">
-          <NavLink
-            exact
-            activeClassName="hvr tc w-full"
-            className="py-2 justify-center flex items-center px-2 text-white hover:text-sr w-full"
-            to="/manage-roles"
-          >
-            <div className="flex items-center gap-2">
-              <MdOutlineAdminPanelSettings />
-            </div>{" "}
+            <AiFillTwitterCircle /> Twitter
           </NavLink>
         </div>
       </div>
+    
     </div>
   );
 };

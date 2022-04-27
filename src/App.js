@@ -21,6 +21,7 @@ import Liquidity from './pages/dxlalock/Liquidity';
 import CreateAirdrop from './pages/airdrop/CreateAirdrop';
 import AirdropList from './pages/airdrop/AirdropList';
 import LeaderBoard from './pages/LeaderBoard';
+import Antibot from './pages/Antibot';
 
 
 
@@ -36,7 +37,7 @@ const App = () => {
             showsidebar={showsidebar}
             setShowsidebar={setShowsidebar} />
         </div>
-        <div className={showsidebar ? 'ml-20 lg:ml-52 mt-20 p-3' : "ml-0"}>
+        <div className={showsidebar ? 'ml-0 lg:ml-52 mt-20 p-3' : "ml-0 mt-24"}>
           <Switch>
             <Route exact path="/">
               <Dashboard />
@@ -77,6 +78,9 @@ const App = () => {
             </Route>
             <Route path="/leaderboard">
               <LeaderBoard />
+            </Route>
+            <Route path="/anti-bot">
+              <Antibot />
             </Route>
        
           </Switch>

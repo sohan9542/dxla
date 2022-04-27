@@ -9,7 +9,7 @@ const Liquidity = () => {
     const [active, setActive] = useState(true)
   return (
     <div className=" w-full ">
-      <div className=" flex items-start ">
+      <div className=" flex items-start p-2 lg:p-0 flex-col lg:flex-row">
         <Trending />
         <div style={{ background: "#172A4B" }} className=" w-full p-3">
           <input

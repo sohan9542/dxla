@@ -23,7 +23,7 @@ const CreateFairLaunch = () => {
   ]
   return (
     <div>
-  <div className='flex items-start mt-20 w-full'>
+  <div className='flex items-start flex-col lg:flex-row p-2 lg:p-0 mt-20 w-full'>
   <Trending/>
      <div className='w-full  pb-2'>
      <Steps steps={steps}/>

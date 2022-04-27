@@ -3,7 +3,7 @@ import { BiTrendingUp } from "react-icons/bi";
 import { Link } from "react-router-dom";
 const Trending = () => {
   return (
-    <div className=" py-2 px-2 flex items-start flex-col lg:h-full   lg:w-32 w-screen">
+    <div className=" py-2 px-2 flex items-start lg:flex-col lg:h-full  overflow-x-scroll lg:overflow-x-hidden  lg:w-32 w-screen">
       <div className=" flex items-center gap-1 px-2 text-sr">
         <BiTrendingUp className=" text-tr w-5 h-5" />
         Trending

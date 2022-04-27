@@ -4,7 +4,7 @@ import Trending from "../../component/Trending";
 const DxlaLockCreate = () => {
   return (
     <div className=" w-full">
-      <div className=" w-full flex items-start">
+      <div className=" w-full flex items-start p-2 lg:p-0 flex-col lg:flex-row">
         <Trending />
         <div style={{ background: "#172A4B" }} className=" p-4 w-full">
           <p className=" text-sr text-lg pb-2 mb-2 border-b">Create your lock</p>
