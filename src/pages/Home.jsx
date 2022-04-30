@@ -2,15 +2,14 @@ import React from "react";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import Cart from "../component/Cart";
+
 import baby from "../images/baby.png";
-import { AiFillLock } from "react-icons/ai";
+import Trending from "../component/Trending";
 import Countdown from "react-countdown";
 const Home = () => {
   return (
-    <div className=" mt-10 lg:p-4 w-full">
+ <div className=" flex items-start w-full gap-2">
+   <div className=" mt-10 lg:p-4 w-full">
       <div className=" w-full border-2 border-tr text-white py-8 bg-nr rounded-md flex items-center justify-center">
         <h4>This is for banner ads</h4>
       </div>
@@ -111,6 +110,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Trending/>
+ </div>
   );
 };
 
