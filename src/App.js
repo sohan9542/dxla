@@ -22,6 +22,7 @@ import CreateAirdrop from './pages/airdrop/CreateAirdrop';
 import AirdropList from './pages/airdrop/AirdropList';
 import LeaderBoard from './pages/LeaderBoard';
 import Antibot from './pages/Antibot';
+import Home from './pages/Home';
 
 
 
@@ -40,7 +41,8 @@ const App = () => {
         <div className={showsidebar ? 'ml-0 lg:ml-52 mt-20 p-3' : "ml-0 mt-24"}>
           <Switch>
             <Route exact path="/">
-              <Dashboard />
+              {/* <Dashboard /> */}
+              <Home/>
             </Route>
             <Route path="/creat-lounchpad">
               <CreateLaunchpad />
